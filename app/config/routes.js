@@ -30,4 +30,7 @@ export default StackNavigator({
   SearchAndFavoritesTab: {
     screen: SearchFavoriteTabs
   }
+}, {
+  // for easier dev debugging experience
+  initialRouteName: 'SearchAndFavoritesTab'
 });

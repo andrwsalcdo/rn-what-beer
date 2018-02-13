@@ -1,9 +1,10 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, StatusBar } from 'react-native';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
 
-const FooterTabs = (props) => (
+const FooterTabs = props => (
   <Footer>
+    <StatusBar barStyle="dark-content"/>
     <FooterTab>
       <Button
         vertical
