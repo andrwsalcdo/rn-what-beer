@@ -13,8 +13,7 @@ ICON_SIZE = 32;
 class Home extends Component {
   
   handlePressSearchBeers = () => {
-    console.log('go and search beers');
-    //TODO: this.props.navigation.navigate('SearchTabNavigator'); 
+    this.props.navigation.navigate('SearchAndFavoritesTab'); 
   }
   
   render() {
