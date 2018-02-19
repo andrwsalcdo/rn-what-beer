@@ -28,7 +28,10 @@ export default StackNavigator({
     }
   },
   SearchAndFavoritesTab: {
-    screen: SearchFavoriteTabs
+    screen: SearchFavoriteTabs, 
+    navigationOptions: {
+      header: () => null
+    }
   }
 }, {
   // for easier dev debugging experience
