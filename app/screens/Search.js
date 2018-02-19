@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
+
 import SearchBar from '../components/SearchBar'; 
+import { BeerData } from '../components/BeerData'; 
   
+import SAMPLE_BEER_DATA from '../data/sampleData'; 
+
 
 class Search extends Component {
 
@@ -15,6 +19,10 @@ class Search extends Component {
     //todo: dispatch action -> saga -> return api data -> reducer
   }
   
+  handleAddFavorites = (beerName) => {
+    console.log('add fav', beerName);
+    // todo: dispatch action -> reducer
+  } 
 
   render() {
     return (
@@ -25,6 +33,10 @@ class Search extends Component {
            />
            
            <Content>
+             <BeerData 
+                beerdata={SAMPLE_BEER_DATA} 
+                addToFavorites={this.handleAddFavorites}
+              />
            </Content>
 
          </Container>
