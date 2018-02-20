@@ -11,7 +11,20 @@ const SAMPLE_BEER_DATA = {
   available: {
     description: 'whenever you want'
   }
-}
+};
+
+const SAMPLE_FAVS = [
+  {
+    name: 'Beer 1'
+  },
+  {
+    name: 'Beer 2'
+  },
+  {
+    name: 'Beer 3'
+  }
+];
 
 
-export default SAMPLE_BEER_DATA; 
+
+export { SAMPLE_BEER_DATA, SAMPLE_FAVS }; 

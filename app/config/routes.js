@@ -15,7 +15,7 @@ const SearchFavoriteTabs = TabNavigator(
     tabBarPosition: 'bottom',
     tabBarComponent: props => <FooterTabs {...props} />,
     animationEnabled: false,
-    swipeEnabled: false
+    swipeEnabled: false,
   }
 );
 
@@ -29,9 +29,6 @@ export default StackNavigator({
   },
   SearchAndFavoritesTab: {
     screen: SearchFavoriteTabs, 
-    navigationOptions: {
-      header: () => null
-    }
   }
 }, {
   // for easier dev debugging experience

@@ -4,10 +4,14 @@ import { Container, Content } from 'native-base';
 import SearchBar from '../components/SearchBar'; 
 import { BeerData } from '../components/BeerData'; 
   
-import SAMPLE_BEER_DATA from '../data/sampleData'; 
+import { SAMPLE_BEER_DATA } from '../data/sampleData'; 
 
 
 class Search extends Component {
+
+  static navigationOptions = {
+    header: null
+  }
 
   handleSearchText = (e) => {
     console.log("typing search", e)
